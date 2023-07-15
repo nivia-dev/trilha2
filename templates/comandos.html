@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos</title>
+    <link rel="stylesheet" href="/styles/style_comandos.css">
+</head>
+<body>
+    
+    <section>
+        <header>Maior Número</header>
+        <div class="num">
+            
+            <div class="nums">
+                Digite o 1º número:
+                <input type="number" name="n1" id="n1">
+            </div>
+        
+        
+            <div class="nums">
+                Digite o 2º número:
+                <input type="number" name="n2" id="n2">
+            </div>
+        
+            <div class="nums">
+                Digite o 3º número:
+                <input type="number" name="n3" id="n3">
+            </div>
+            
+            <div id="botao"><button onclick="maior()">Mostre o Maior Numero</button></div>
+
+        </div>
+        
+        
+    </section>
+    <section>
+        <header>Idade</header>
+        <div class="num">
+            
+            <div class="nums">
+                Qual sua idade?
+                <input type="number" name="idade" id="idade">
+            </div>
+                  
+            <div id="botao"><button onclick="maioridade()">Executar</button></div>
+
+        </div>
+        
+    </section>
+
+    <section>
+        <header>Multiplos</header>
+        <div class="num">
+            
+            <div class="nums">
+                Soma dos Multiplos de 3 ou 5<br>
+                no intervalo de 0 a 1000 
+                
+            </div>
+                  
+            <div id="botao">
+                <button onclick="multiplos()">Somar</button>
+                
+            </div>
+
+        </div>
+        <div id="res"></div>
+        
+      
+    </section>
+    <script src="/script.js"></script>
+    
+</body>
+</html>

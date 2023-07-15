@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+header {
+    background-color: rgb(231, 188, 131);
+    border-radius: 5px;  
+    line-height: 5vh;
+    margin-top: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+#borda {
+    width: 95vw;
+    height: 95vh;
+    
+    margin: 10px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: antiquewhite;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-auto-flow: row;
+    gap: 10px 10px;
+    padding-top: 25px;
+    height: 100vh;
+    background-color: antiquewhite;
+    margin: auto;
+    place-items: center;
+}
+
+.box {
+    text-align: center;
+    padding: 15px;
+    
+}
+
+img {
+    width: 20vw;
+    border-radius: 10px;
+}
+
+img:hover {
+    -webkit-transform:scale(1.25); 
+}
+
+
+.um {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.dois {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.tres {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.quatro {
+    grid-column: 1;
+    grid-row: 2 / span 2;
+}
+
+.cinco {
+    grid-column: 2;
+    grid-row: 2;
+
+}
+.seis {
+    grid-column: 3;
+    grid-row: 2 / span 2;
+
+}
+.sete {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.oito {
+    grid-column: 1;
+    grid-row: 4 / 5;
+
+}
+
+.nove {
+    grid-column: 2;
+    grid-row: 4;
+
+}
+.dez {
+    grid-column: 3;
+    grid-row: 4 / 5;
+
+}
+
+footer {
+    background-color: rgb(231, 188, 131);
+    border-radius: 5px;
+    line-height: 2vh;
+}
+h4 {
+    text-align: center;
+}
+
+footer a {
+   font-weight: bold;
+   text-decoration: none;
+}
+
+ a:hover {
+    text-decoration: none;
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 25vw;
+    }
+}
+
+@media (max-width: 590px) {
+    
+    #borda{
+        width: 100vw;
+    }
+}
